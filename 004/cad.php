@@ -12,12 +12,9 @@
     </header>
     <main>
         <?php 
-        
             $nome = $_REQUEST["nome"];
             $sobrenome = $_REQUEST["sobrenome"];
-
             echo "<p>É um prazer te conhecer, $nome $sobrenome! Este é o meu site!";
-        
         ?>
     </main>
 </body>
