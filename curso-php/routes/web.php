@@ -30,15 +30,21 @@ Route::get('/', function () {
 
 });
 
-Route::get('/products', function () {
+Route::get('/contact', function () {
+
+    return view('contact');
+
+});
+
+Route::get('/product', function () {
 
     return view('products');
 
 });
 
-Route::get('/contact', function () {
+Route::get('/product/{id}', function ($id = null) {
 
-    return view('contact');
+    return view('product', ['id' => $id]);
 
 });
 ?>

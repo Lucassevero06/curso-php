@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('title', 'Lucas Gabriel')
+@section('title', 'Contact')
 
 @section('content')
 <h1>Contatos</h1>

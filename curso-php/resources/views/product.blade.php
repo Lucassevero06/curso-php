@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
-@section('title', 'Welcome')
+@section('title', 'Product')
 
 @section('content')
-<h1>Welcome</h1>
+<p>Exibindo produto id: {{ $id }}</p>
 @endsection('content')
