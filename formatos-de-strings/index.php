@@ -12,9 +12,17 @@
 
 -->
 
-<!-- HEREDOC: -->
+<!-- HEREDOC:
 
-<!-- NOWDOC: -->
+//O heredoc permite você trabalhar com blocos de textos maiores sem se preocupar em escapar aspas duplas ou simples. Isto porque ele utiliza um demarcador “tagueado” identificando o começo e no final de cada string. Ele, assim como a aspas duplas, permite que você trabalhe com variáveis dentro da string. O heredoc irá interpretar a varíavel perfeitamente, sem concatenações e etc.
+
+-->
+
+<!-- NOWDOC:
+
+//O nowdoc tem utilização bem semelhante ao heredoc, porém, ele não consegue interpretar variáveis ou caracteres de controle. Este comando é compatível a partir do php 5.3. Para utilizá-lo segue a mesma lógica, com um pequeno detalhe, aqui o identificador inicial deve ter aspas simples.
+
+-->
 
 //OPERADOR DE CONCATENAÇÃO NO PHP É O .(ponto)
 
