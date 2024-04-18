@@ -3,5 +3,5 @@
 @section('title', 'Lucas Gabriel')
 
 @section('content')
-<h1>Welcome</h1>
+<h1>Tela de produtos</h1>
 @endsection('content')

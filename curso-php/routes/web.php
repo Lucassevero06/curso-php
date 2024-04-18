@@ -27,4 +27,18 @@ Route::get('/', function () {
         'profissao' => "Programador",
         'array' => $array
     ]);
+
 });
+
+Route::get('/products', function () {
+
+    return view('products');
+
+});
+
+Route::get('/contact', function () {
+
+    return view('contact');
+
+});
+?>
