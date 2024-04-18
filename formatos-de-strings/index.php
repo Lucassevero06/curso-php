@@ -1,0 +1,2 @@
+<!-- QUATRO FORMATOS DE STRINGS -->
+
