@@ -5,13 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>Laravel</title>
-
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.bunny.net">
-        <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="/css/style.css">
+        <script src="/js/script.js"></script>
 
     </head>
     <body>
+        <img src="/img/banner.jpg" alt="Banner">
         <h1>Hello World</h1>
         @if(10 > 5)
             <p>A condição é true</p>
@@ -26,5 +25,18 @@
         @else
         <p>O nome não é Pedro</p>
         @endif
+
+        @for($i = 0; $i < count($array); $i++)
+            <p>{{ $array[$i] }} - {{ $i }}</p>
+        @endfor
+
+        @php 
+            $name = "Lucas";
+            echo $name;
+        @endphp
+
+
+        <!-- COMENTÁRIO HTML aparece no console --> 
+        {{-- COMENTÁRIO BLADE não aparece no console --}}
     </body>
 </html>
