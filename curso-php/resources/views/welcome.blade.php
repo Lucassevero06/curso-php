@@ -4,6 +4,10 @@
 
 @section('content')
 
-<h1>Welcome</h1>
+@foreach($events as $event)
 
-@endsection('content')
+    <p>{{ $event->title }} -- {{ $event->description }}</p>
+
+@endforeach
+
+@endsection
