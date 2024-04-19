@@ -28,7 +28,7 @@
                     </a>
                     <ul class="navbar-nav">
                         <li class="nav-iten">
-                            <a href="/events/events" class="nav-link">Eventos</a>
+                            <a href="/events/events" class="nav-link">Events</a>
                         </li>
                         <li class="nav-iten">
                             <a href="/events/create" class="nav-link">Create Event</a>
