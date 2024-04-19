@@ -20,9 +20,37 @@
 
     </head>
     <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="collapse navbar-collapse" id="navbar">
+                    <a href="/" class="navbar-brand">
+                        <img src="/img/hdcevents_logo.svg" alt="">
+                    </a>
+                    <ul class="navbar-nav">
+                        <li class="nav-iten">
+                            <a href="/events/events" class="nav-link">Eventos</a>
+                        </li>
+                        <li class="nav-iten">
+                            <a href="/events/create" class="nav-link">Create Event</a>
+                        </li>
+                        <li class="nav-iten">
+                            <a href="/events/contact" class="nav-link">Contact</a>
+                        </li>
+                        <li class="nav-iten">
+                            <a href="/events/login" class="nav-link">Login</a>
+                        </li>
+                        <li class="nav-iten">
+                            <a href="/events/register" class="nav-link">Register</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
         @yield('content')
         <footer>
             <p>Lucas Gabriel &copy; 2024</p>
         </footer>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     </body>
 </html>

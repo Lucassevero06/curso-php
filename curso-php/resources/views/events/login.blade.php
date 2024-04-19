@@ -1,7 +1,9 @@
 @extends('layouts.main')
 
-@section('title', 'Products')
+@section('title', 'login')
 
 @section('content')
-<h1>Tela de produtos</h1>
+
+<h1>Login</h1>
+
 @endsection('content')
