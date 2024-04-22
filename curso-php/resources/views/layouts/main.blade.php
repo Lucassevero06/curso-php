@@ -43,7 +43,7 @@
                             <a href="/events/register" class="nav-link">Register</a>
                         </li>
                     </ul>
-                </div>
+                    </div>
             </nav>
         </header>
         @yield('content')
