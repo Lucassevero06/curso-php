@@ -12,8 +12,8 @@
     </header>
     <main>
         <?php 
-            $nome = $_REQUEST["nome"];
-            $sobrenome = $_REQUEST["sobrenome"];
+            $nome = $_GET["nome"] ?? "Sem nome";
+            $sobrenome = $_GET["sobrenome"] ?? "Desconhecido";
             echo "<p>É um prazer te conhecer, $nome $sobrenome! Este é o meu site!</p>";
         ?>
     </main>
