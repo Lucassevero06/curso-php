@@ -67,5 +67,12 @@ class EventController extends Controller
         return redirect('/')->with('msg', 'event created successfully');
 
     }
-    
+
+    public function show($id) {
+        
+        $event = Event::findOrFail($id);
+
+        return view('events.show', ['event' => $event]);
+
+    }
 }
