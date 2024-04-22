@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Models\Event;
+use Illuminate\Support\Facades\Redirect;
 
 class EventController extends Controller
 {
@@ -35,6 +36,21 @@ class EventController extends Controller
 
     public function register() {
         return view('register');
+    }
+
+    public function store(Request $request) {
+
+        $event = new Event;
+
+        $event->title = $request->title;
+        $event->city = $request->city;
+        $event->private = $request->private;
+        $event->description = $request->description;
+
+        $event->save();
+
+        return redirect('/');
+
     }
     
 }

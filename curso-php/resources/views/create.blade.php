@@ -4,6 +4,31 @@
 
 @section('content')
 
-<h1>Create Events</h1>
+<div id="event-create-container" class="col-md-6 offset-md-3">
+    <h1>Create Event</h1>
+    <form action="/events/" method="post">
+        @csrf
+        <div class="form-group">
+            <label for="title">Event:</label>
+            <input type="text" class="form-control" id="title" name="title" placeholder="Name of Event">
+        </div>
+        <div class="form-group">
+            <label for="title">City:</label>
+            <input type="text" class="form-control" id="city" name="city" placeholder="Event's Place">
+        </div>
+        <div class="form-group">
+            <label for="title">Event is Private?</label>
+            <select name="private" id="private" class="form-control">
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="title">Description:</label>
+            <textarea name="description" id="description" class="form-control" placeholder="Describe the event"></textarea>
+        </div>
+        <input type="submit" value="Create Event" class="btn btn-primary">
+    </form>
+</div>
 
 @endsection('content')
