@@ -16,13 +16,13 @@ class EventController extends Controller
         return view('welcome', ['events' => $events]);
 
     }
-    
+
     public function events() {
         return view('events');
     }
 
     public function create() {
-        return view('events.create');
+        return view('create');
     }
 
     public function contact() {
@@ -31,10 +31,10 @@ class EventController extends Controller
 
     public function login() {
         return view('login');
-    }
+    }    
 
     public function register() {
         return view('register');
     }
-
+    
 }
