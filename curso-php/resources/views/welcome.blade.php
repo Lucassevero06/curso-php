@@ -4,8 +4,6 @@
 
 @section('content')
 
-@foreach($events as $event)
-
     <div id="search-container" class="col-md-12">
         <h1>Busque seu Evento</h1>
         <form action="">
@@ -29,7 +27,5 @@
             @endforeach
         </div>
     </div>
-
-@endforeach
 
 @endsection
